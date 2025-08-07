@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .inline-label {
+            display: inline;
+            font-weight: normal;
+        }
+        .form-row {
+            margin-bottom: 15px;
+        }
+        video, audio {
+            width: 100%;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML5 Content & Forms</h1>
+        <p>Demonstrating advanced HTML5 features including structured content and forms with native validation</p>
+    </header>
+
+    <section id="content-section">
+        <h2>Structured Content Examples</h2>
+        
+        <article>
+            <h3>Ordered and Unordered Lists</h3>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="width: 48%;">
+                    <h4>Top 5 Programming Languages (Ordered)</h4>
+                    <ol>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>PHP</li>
+                    </ol>
+                </div>
+                <div style="width: 48%;">
+                    <h4>Web Development Skills (Unordered)</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                        <li>Accessibility</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>Definition List</h3>
+            <dl>
+                <dt>HTML5</dt>
+                <dd>The latest version of HyperText Markup Language, the standard markup language for creating web pages.</dd>
+                
+                <dt>CSS3</dt>
+                <dd>The latest evolution of the Cascading Style Sheets language, used for styling web content.</dd>
+                
+                <dt>JavaScript</dt>
+                <dd>A programming language that enables interactive web pages and is an essential part of web applications.</dd>
+            </dl>
+        </article>
+
+        <article>
+            <h3>Data Table</h3>
+            <table>
+                <caption>Monthly Tech Conference Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Conference</th>
+                        <th>Location</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>CES</td>
+                        <td>Las Vegas</td>
+                        <td>3 days</td>
+                    </tr>
+                    <tr>
+                        <td>March</td>
+                        <td>SXSW</td>
+                        <td>Austin</td>
+                        <td>10 days</td>
+                    </tr>
+                    <tr>
+                        <td>May</td>
+                        <td>Google I/O</td>
+                        <td>Mountain View</td>
+                        <td>2 days</td>
+                    </tr>
+                    <tr>
+                        <td>June</td>
+                        <td>Apple WWDC</td>
+                        <td>San Jose</td>
+                        <td>5 days</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">All conferences subject to change</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <article>
+            <h3>Media Elements</h3>
+            <h4>Video Example</h4>
+            <video controls poster="https://via.placeholder.com/800x450">
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <h4>Audio Example</h4>
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <h4>Figure with Caption</h4>
+            <figure>
+                <img src="https://via.placeholder.com/800x450" alt="Placeholder image">
+                <figcaption>Example of a figure with a caption in HTML5</figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <section id="form-section">
+        <h2>Advanced HTML5 Form</h2>
+        
+        <form id="registration-form" novalidate>
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-row">
+                    <label for="fullname">Full Name*</label>
+                    <input type="text" id="fullname" name="fullname" required 
+                           placeholder="Enter your full name" 
+                           minlength="3" maxlength="50"
+                           pattern="[A-Za-z ]+"
+                           title="Only letters and spaces allowed">
+                </div>
+                
+                <div class="form-row">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" required 
+                           placeholder="your.email@example.com"
+                           autocomplete="email">
+                </div>
+                
+                <div class="form-row">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" 
+                           placeholder="123-456-7890"
+                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                           title="Format: 123-456-7890">
+                </div>
+                
+                <div class="form-row">
+                    <label for="birthdate">Date of Birth*</label>
+                    <input type="date" id="birthdate" name="birthdate" required
+                           min="1900-01-01" max="2023-12-31">
+                </div>
+                
+                <div class="form-row">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="18" max="120"
+                           readonly
+                           placeholder="Will be calculated from birthdate">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Account Details</legend>
+                
+                <div class="form-row">
+                    <label for="username">Username*</label>
+                    <input type="text" id="username" name="username" required
+                           placeholder="Choose a username" minlength="4" maxlength="20"
+                           autocomplete="username">
+                </div>
+                
+                <div class="form-row">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" required
+                           placeholder="Create a password" minlength="8"
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                           title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 characters">
+                </div>
+                
+                <div class="form-row">
+                    <label for="confirm-password">Confirm Password*</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required
+                           placeholder="Re-enter your password">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <div class="form-row">
+                    <label>Preferred Contact Method</label>
+                    <div>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                        <label for="contact-email" class="inline-label">Email</label>
+                        
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label for="contact-phone" class="inline-label">Phone</label>
+                        
+                        <input type="radio" id="contact-text" name="contact-method" value="text">
+                        <label for="contact-text" class="inline-label">Text Message</label>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <label for="timezone">Timezone*</label>
+                    <select id="timezone" name="timezone" required>
+                        <option value="" disabled selected>Select your timezone</option>
+                        <optgroup label="North America">
+                            <option value="est">Eastern (EST)</option>
+                            <option value="cst">Central (CST)</option>
+                            <option value="mst">Mountain (MST)</option>
+                            <option value="pst">Pacific (PST)</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="gmt">GMT</option>
+                            <option value="cet">Central European (CET)</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <label>Interests (Select up to 3)</label>
+                    <div>
+                        <input type="checkbox" id="interest-web" name="interests" value="web">
+                        <label for="interest-web" class="inline-label">Web Development</label>
+                        
+                        <input type="checkbox" id="interest-mobile" name="interests" value="mobile">
+                        <label for="interest-mobile" class="inline-label">Mobile Development</label>
+                        
+                        <input type="checkbox" id="interest-data" name="interests" value="data">
+                        <label for="interest-data" class="inline-label">Data Science</label>
+                        
+                        <input type="checkbox" id="interest-ai" name="interests" value="ai">
+                        <label for="interest-ai" class="inline-label">Artificial Intelligence</label>
+                        
+                        <input type="checkbox" id="interest-cloud" name="interests" value="cloud">
+                        <label for="interest-cloud" class="inline-label">Cloud Computing</label>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <label for="avatar">Profile Picture</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                </div>
+                
+                <div class="form-row">
+                    <label for="website">Personal Website</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com">
+                </div>
+                
+                <div class="form-row">
+                    <label for="favcolor">Favorite Color</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#3498db">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <div class="form-row">
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" name="bio" rows="4" maxlength="500"
+                              placeholder="Tell us about yourself (max 500 characters)"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <label for="experience">Years of Experience</label>
+                    <input type="range" id="experience" name="experience" min="0" max="20" value="5" step="1">
+                    <output for="experience" id="experience-output">5</output> years
+                </div>
+                
+                <div class="form-row">
+                    <label for="search">Search Skills</label>
+                    <input type="search" id="search" name="search" placeholder="Search your skills...">
+                </div>
+            </fieldset>
+            
+            <div class="form-row">
+                <input type="hidden" id="referral-source" name="referral-source" value="organic">
+                <button type="submit">Submit Registration</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 HTML5 Forms Demonstration. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple script to demonstrate output element (not part of validation)
+        document.getElementById('experience').addEventListener('input', function() {
+            document.getElementById('experience-output').value = this.value;
+        });
+        
+        // This would normally be where JavaScript validation would go,
+        // but we're relying solely on HTML5 validation for this assignment
+    </script>
+</body>
+</html>
